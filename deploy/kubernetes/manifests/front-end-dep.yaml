@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: quay.io/satya_elipe/front-end:master
+        #image: quay.io/satya_elipe/front-end:master
+        image: registry.hub.docker.com/selipe/front-end:latest
         resources:
           limits:
             cpu: 300m
