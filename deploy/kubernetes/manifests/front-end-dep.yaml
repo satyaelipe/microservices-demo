@@ -2,14 +2,14 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: front-end
+  name: front-end1
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: front-end
+        name: front-end1
     spec:
       containers:
       - name: front-end
