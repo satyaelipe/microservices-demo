@@ -2,19 +2,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: catalogue-db
+  name: catalogue-db1
   labels:
-    name: catalogue-db
+    name: catalogue-db1
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: catalogue-db
+        name: catalogue-db1
     spec:
       containers:
-      - name: catalogue-db
+      - name: catalogue-db1
         image: weaveworksdemos/catalogue-db:0.3.0
         env:
           - name: MYSQL_ROOT_PASSWORD
