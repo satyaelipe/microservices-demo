@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: catalogue-db
+  name: catalogue-db1
   labels:
-    name: catalogue-db
+    name: catalogue-db1
   namespace: sock-shop
 spec:
   ports:
@@ -12,4 +12,4 @@ spec:
   - port: 3306
     targetPort: 3306
   selector:
-    name: catalogue-db
+    name: catalogue-db1
