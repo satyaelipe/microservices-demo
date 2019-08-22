@@ -2,19 +2,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: catalogue
+  name: catalogue1
   labels:
-    name: catalogue
+    name: catalogue1
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: catalogue
+        name: catalogue1
     spec:
       containers:
-      - name: catalogue
+      - name: catalogue1
         image: weaveworksdemos/catalogue:0.3.5
         command: ["/app"]
         args:
