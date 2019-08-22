@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: catalogue
+  name: catalogue1
   labels:
-    name: catalogue
+    name: catalogue1
   namespace: sock-shop
 spec:
   ports:
