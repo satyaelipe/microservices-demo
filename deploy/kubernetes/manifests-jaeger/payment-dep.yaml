@@ -2,16 +2,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: payment
+  name: payment2
   labels:
-    name: payment
+    name: payment2
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: payment
+        name: payment2
     spec:
       containers:
       - name: payment
