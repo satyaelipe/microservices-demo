@@ -2,16 +2,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: user
+  name: user2
   labels:
-    name: user
+    name: user2
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: user
+        name: user2
     spec:
       containers:
       - name: user
