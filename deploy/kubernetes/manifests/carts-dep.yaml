@@ -2,19 +2,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: carts
+  name: carts1
   labels:
-    name: carts
+    name: carts1
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: carts
+        name: carts1
     spec:
       containers:
-      - name: carts
+      - name: carts1
         image: weaveworksdemos/carts:0.4.8
         env:
          - name: ZIPKIN
