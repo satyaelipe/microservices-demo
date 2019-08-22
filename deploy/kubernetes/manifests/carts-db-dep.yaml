@@ -2,19 +2,19 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: carts-db
+  name: carts-db1
   labels:
-    name: carts-db
+    name: carts-db1
   namespace: sock-shop
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        name: carts-db
+        name: carts-db1
     spec:
       containers:
-      - name: carts-db
+      - name: carts-db1
         image: mongo
         ports:
         - name: mongo
